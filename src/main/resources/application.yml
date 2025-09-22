@@ -33,8 +33,6 @@ swagger:
   app-name: Sample API
   app-description: Sample Spring Boot API for boilerplate
   app-version: 1.0.0
-  app-license: Apache 2.0
-  app-license-url: https://www.apache.org/licenses/LICENSE-2.0
-  contact-name: Genc
-  contact-url: https://github.com/Genc
-  contact-mail: genc.dev@example.com
+  contact-name: Newbie
+  contact-url: https://github.com/Newbie1402
+  contact-mail: phananhthai.dao04@gmail.com
