@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO:validate}
+    open-in-view: false
+  flyway:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  health:
+    probes:
+      enabled: true
+server:
+  port: 8080
+
+
+#swagger
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  default-produces-media-type: application/json
+
+swagger:
+  app-name: Sample API
+  app-description: Sample Spring Boot API for boilerplate
+  app-version: 1.0.0
+  app-license: Apache 2.0
+  app-license-url: https://www.apache.org/licenses/LICENSE-2.0
+  contact-name: Genc
+  contact-url: https://github.com/Genc
+  contact-mail: genc.dev@example.com
